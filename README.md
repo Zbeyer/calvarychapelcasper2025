@@ -8,9 +8,7 @@
 
 https://docs.meteor.com/about/web-apps.html
 
-```bash
-meteor create myapp
-```
+>   Tiny containers are designed for hobby projects and open-source demos
 
 ```bash
 meteor create ccc --blaze
@@ -20,3 +18,4 @@ meteor create ccc --blaze
 meteor deploy ccc
 ```
 
+https://ccc.meteorapp.com/
