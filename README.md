@@ -23,14 +23,14 @@ Meteor (or MeteorJS) is a **full-stack JavaScript framework** designed for build
 Essentially Meteor is a wrapper around `Node.js` that lets you incorporate a database without using something like `express`. By defaualt it uses `MongoDB`, a no-SQL database and talks to *its* server with `Meteor.call` and queries mongo from the server
 
 ```ts
-			await ServerDB.updateUser(
-				{ _id: user._id },
-				{
-					$set: {
-						"user.dataId": iDstring,
-					},
-				},
-			);
+await ServerDB.updateUser(
+    { _id: user._id },
+    {
+        $set: {
+            "user.dataId": iDstring,
+        },
+    },
+);
 ```
 
 
