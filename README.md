@@ -2,8 +2,6 @@
 
 > https://www.calvarychapelcasper.com
 
-
-
 A little about web design ...
 
 Front end web revolves around these three: `HTML | CSS | JS`
@@ -68,7 +66,30 @@ The language I like to use:
 
 -   `fetch` data :get or read
 -   `set` data: post, create, or update
--   `delet` or clear wipe data
+-   `delete` or clear wipe data
+
+## Organize
+
+```mermaid
+graph TD;
+
+Repository-->Codebase;
+Codebase-->client;
+Codebase-->lib;
+Codebase-->public;
+Codebase-->sever;
+```
+
+Our reposory is GitHub, this is where we store code
+
+`Client` is a folder that only loads on the Meteor Client. That means it only affects how users see and interact with the site. CSS should stay here.This is all the user will see.
+
+`lib` is a folder that will go in both server and client, helper functions like 1+1=2 that need to work on the front and back ends go here
+
+`Public` is a folder for files that should be public, images go here.
+
+`Server` is a folder that is back end only, database queries go here.
+
 
 ## Deploy
 
@@ -84,8 +105,9 @@ meteor create ccc --blaze
 meteor deploy ccc
 ```
 ## Links
+
 **Apps** https://galaxy-beta.meteor.com/zbomb/us-east-1/apps
 
 **Container**(s) https://beta.galaxycloud.app/zbomb/us-east-1/apps/ccc.meteorapp.com/overview
 
-**Demo**: https://ccc.meteorapp.com will be always online when upgraded from free tier.
+##### **Demo**: https://ccc.meteorapp.com will be always online when upgraded from free tier.
