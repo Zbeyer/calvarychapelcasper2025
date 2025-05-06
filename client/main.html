@@ -3,46 +3,17 @@
 </head>
 
 <body>
-<html>
-<div class="container">
+<div class="page container">
 
-  <div class="title">
-    <h1>Calvary Chapel Casper</h1>
-    <hr>
-    <h3>Simply Teaching the Word Simply</h3>
-    <p>Work In Progress</p>
-  </div>
-  <div class="hero">
-    <img src="banner.jpg" alt="sunset">
-  </div>
-
-  <article>
-    <!--
-	<img src="https://static.wixstatic.com/media/90a441_788ee38b354949fa9f2a23aa1c72f03e~mv2.jpg/v1/fill/w_334,h_293,al_c,lg_1,q_80,enc_auto/90a441_788ee38b354949fa9f2a23aa1c72f03e~mv2.jpg" alt="" class="icon">
-	-->
-    <p>Welcome to Calvary Chapel Casper! It is our desire that you find a place to get plugged in and grow in God’s will for your life within a fellowship of believers. There are many churches in the area that are great places to grow and thrive. We would like to share a little about our fellowship as you consider where God may have you grow. We place a strong emphasis on knowing the entire counsel of God. During weekly service times Pastor Bob takes the fellowship chapter by chapter and by verse. Once a book is been taught, a new book is selected to cover from beginning to end. During Wednesday evening services we study verse by verse from Genesis to Revelation until the entire Bible is covered.
-    </p>
-    <p>
-      <a href="https://www.google.com/maps/place/Calvary+Chapel-Casper/@42.832719,-106.328299,14z/data=!3m1!4b1!4m5!3m4!1s0x8760bbdfe6bd23f3:0x5050ab9289f45815!8m2!3d42.8326889!4d-106.3108323" target="_blank">1725 S Jackson St, Casper, WY 82601</a>
-    </p>
-  </article>
-
-  <article>
-    <section>
-      <p>
-        ...
-      </p>
-    </section>
-  </article>
+{{> header}}
+  {{# article}}
+    {{# section}}
+      {{> about}}
+    {{/ section}}
+    {{# section}}
+      {{> location}}
+    {{/ section}}
+{{/ article}}
 
 </div>
-</html></body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-</template>
+</body>
