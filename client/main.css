@@ -1,107 +1,65 @@
 
-
-body
-{
-  font-size: 100%;
-  padding: 0 0 0 0;
-  margin: 1em;
-  color: #191714;
-  background-color: var(--white);
-  text-align: center;
+body {
+	font-size: 100%;
+	padding: 0 0 0 0;
+	margin: 1em;
+	color: #191714;
+	background-color: var(--white);
+	text-align: center;
 
 }
 
-a
-{
-  display: inline-block;
-  min-height: 24px;
-  min-width: 24px;
-  vertical-align: middle;
-  padding: 4px 8px 4px 8px;
+a {
+	display: inline-block;
+	min-height: 24px;
+	min-width: 24px;
+	vertical-align: middle;
+	padding: 4px 8px 4px 8px;
 
-  border: 2px solid #005E65;
-  color: #005E65;
-  font-weight: bold;
-  border-radius: 8px;
+	border: 2px solid #005E65;
+	color: #005E65;
+	font-weight: bold;
+	border-radius: 8px;
 }
 
-p
-{
-  font-size: 1.25em;
+p {
+	font-size: 1.25em;
 }
 
-h1
-{
-  font-weight: bold;
-  color: var(--blue);
-  font-size: 5em;
-  margin: 0 0 0 0;
-  text-shadow: var(--shadow) 8px 8px 21px;
-  -webkit-text-stroke: 2px var(--white);
+h1 {
+	font-weight: bold;
+	color: var(--blue);
+	font-size: 5em;
+	margin: 0 0 0 0;
+	text-shadow: var(--shadow) 8px 8px 21px;
+	-webkit-text-stroke: 2px var(--white);
 }
 
-hr
-{
-  border: 2px solid var(--blue);
+hr {
+	border: 2px solid var(--blue);
 }
 
-h3
-{
-  color: var(--blue);
-  font-size: 2em;
+h3 {
+	color: var(--blue);
+	font-size: 2em;
 }
 
-.container
-{
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 2.0em;
+		text-shadow: unset;
+		-webkit-text-stroke: unset;
+	}
 
-  padding: 0.25em 1.5em 0.5em 1.5em;
-  background: var(--sand);
-  max-width: 900px;
-  text-align: left;
-  margin: auto;
-  border-radius: 13px;
-  box-shadow: 0 5px 8px rgb(0, 0, 0, 33%);
-}
+	h3 {
+		font-size: 1.5em;
+	}
 
-.hero
-{
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  height: 140px;
-}
+	.hero img {
+		left: -600px;
+	}
 
-.hero img
-{
-  position: absolute;
-  top: -180px;
-  left: -400px;
-}
-
-.icon
-{
-  height: 64px;
-  width: auto;
-}
-
-@media only screen and (max-width: 600px)
-{
-  h1
-  {
-    font-size: 2.0em;
-    text-shadow: unset;
-    -webkit-text-stroke: unset;
-  }
-  h3
-  {
-    font-size: 1.5em;
-  }
-  .hero img
-  {
-    left: -600px;
-  }
-  p
-  {
-    font-size: 1em;
-  }
+	p {
+		font-size: 1em;
+	}
 }

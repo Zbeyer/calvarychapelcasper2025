@@ -1,0 +1,9 @@
+.container {
+	padding: 0.25em 1.5em 0.5em 1.5em;
+	background: var(--sand);
+	max-width: 900px;
+	text-align: left;
+	margin: auto;
+	border-radius: 13px;
+	box-shadow: 0 5px 8px rgb(0, 0, 0, 33%);
+}

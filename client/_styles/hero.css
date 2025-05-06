@@ -1,0 +1,12 @@
+.hero {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	height: 140px;
+}
+
+.hero img {
+	position: absolute;
+	top: -180px;
+	left: -400px;
+}
