@@ -4,35 +4,15 @@
 
 
 
-**HTML**: web frameworks: what is on the screen
+A little about web design ...
+
+Front end web revolves around these three: `HTML | CSS | JS`
+
+**HTML**: frameworks: what is on the screen
 
 **CSS**: beautification: make it look pretty
 
 **JS**: functionality: make it do something
-
-Front end web revolves around these three: `HTML | CSS | JS`
-
-## Meteor
-
-https://docs.meteor.com/about/web-apps.html
-
->   Tiny containers are designed for hobby projects and open-source demos
-
-```bash
-meteor create ccc --blaze
-```
-
-```bash
-meteor deploy ccc
-```
-
-https://ccc.meteorapp.com/
-
-----
-
-**Apps** https://galaxy-beta.meteor.com/zbomb/us-east-1/apps
-
-**Container**(s) https://beta.galaxycloud.app/zbomb/us-east-1/apps/ccc.meteorapp.com/overview
 
 ## What is Blaze?
 
@@ -55,10 +35,57 @@ Essentially Meteor is a wrapper around `Node.js` that lets you incorporate a dat
 			);
 ```
 
+
+
 ```mermaid
 graph TD;
-MeteorServer-->Database;
-MeteorClient-->MeteorServer
+
+MeteorClient-->MeteorHTML;
+MeteorClient-->MeteorCSS;
+MeteorClient-->MeteorJS;
+MeteorJS-->MeteorServer;
+
+MeteorServer-->QueryFuction;
+QueryFuction-->Database;
 
 ```
 
+# Web Architecture Skinny
+
+In web design and development, **RESTful** refers to a web architecture that follows the principles of **Representational State Transfer (REST)**. REST is a widely used standard for building **scalable and efficient web services** and is used to make websites use CRUD:
+
+`GET` (Retrieve data)
+
+`POST` (Create new data)
+
+`PUT` (Update data)
+
+`DELETE` (Remove data)
+
+CRUD stands for **Create, Read, Update, and Delete**—the four basic operations that can be performed on a database.
+
+The language I like to use:
+
+-   `fetch` data :get or read
+-   `set` data: post, create, or update
+-   `delet` or clear wipe data
+
+## Deploy
+
+read the docs: https://docs.meteor.com/about/web-apps.html
+
+>   Tiny containers are designed for hobby projects and open-source demos
+
+```bash
+meteor create ccc --blaze
+```
+
+```bash
+meteor deploy ccc
+```
+## Links
+**Apps** https://galaxy-beta.meteor.com/zbomb/us-east-1/apps
+
+**Container**(s) https://beta.galaxycloud.app/zbomb/us-east-1/apps/ccc.meteorapp.com/overview
+
+**Demo**: https://ccc.meteorapp.com will be always online when upgraded from free tier.
