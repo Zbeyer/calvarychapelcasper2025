@@ -1,0 +1,32 @@
+<template name="layout">
+	<div class="page container">
+		{{> header}}
+		<main>{{> Template.dynamic template=main}}</main>
+	</div>
+</template>
+
+<template name="home-page">
+	{{# article}}
+		{{> upcomingEvents}}
+	{{/ article}}
+	{{# article}}
+		{{# section}}
+			{{> serviceTimes}}
+		{{/section}}
+		{{# section}}
+			{{> location}}
+		{{/ section}}
+	{{/ article}}
+	{{# article}}
+		{{# section}}
+			{{> contact}}
+		{{/ section}}
+	{{/ article}}
+</template>
+<template name="mission-page">
+	{{# article}}
+		{{# section}}
+			{{> mission}}
+		{{/ section}}
+	{{/ article}}
+</template>

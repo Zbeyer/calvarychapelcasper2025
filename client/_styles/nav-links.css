@@ -1,0 +1,23 @@
+.nav-links a{
+	font-size: 2.0em;
+	border: none;
+	background-color: var(--blue);
+	color: var(--white);
+	min-height: 50px;
+	line-height: 50px;
+	min-width: 80px;
+	margin: 0.25em;
+	padding: 0.5em 1em;
+}
+.nav-links a:hover{
+	background-color: var(--sand);
+	color: var(--black);
+}
+.nav-links a:active{
+	background-color: var(--white);
+	color: var(--blue);
+}
+/*.nav-links a:focus{*/
+/*	outline: 2px solid var(--blue);*/
+/*	outline-offset: 2px;*/
+/*}*/
