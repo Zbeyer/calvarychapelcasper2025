@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 2.0em;
+		text-shadow: unset;
+		-webkit-text-stroke: unset;
+	}
+
+	h3 {
+		font-size: 1.5em;
+	}
+
+	.hero img {
+		left: -600px;
+	}
+
+	p {
+		font-size: 1em;
+	}
+}

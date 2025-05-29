@@ -1,21 +1,32 @@
-<head>
-  <title>Meteor App</title>
-</head>
+	<head>
+		<title>Calvary Chapel Casper</title>
+	</head>
 
-<body>
-<div class="page container">
+	<body>
+		<div class="page container">
+			{{> page}}
+		</div>
+	</body>
 
-  {{> header}}
-  {{# article}}
-    {{# section}}
-      {{> about}}
-    {{/ section}}
-    {{# section}}
-      {{> location}}
-    {{/ section}}
-    {{# section}}
-      {{> contact}}
-    {{/ section}}
-  {{/ article}}
-</div>
-</body>
+	<template name="page">
+		{{> header}}
+		{{# article}}
+			{{# section}}
+				{{> about}}
+			{{/ section}}
+			{{> upcomingEvents}}
+		{{/ article}}
+		{{# article}}
+			{{# section}}
+				{{> serviceTimes}}
+			{{/section}}
+			{{# section}}
+				{{> location}}
+			{{/ section}}
+		{{/ article}}
+		{{# article}}
+			{{# section}}
+				{{> contact}}
+			{{/ section}}
+		{{/ article}}
+	</template>
